@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Марина Кузнецова"/>
+    <meta name="description" content="Public test project" lang="en"/>
+    <link rel="stylesheet" href="./pages/index.css"/>
+    <title lang="en">Public test</title>
+</head>
+
+<body class="body">
+<div class="page">
+
+    <h1 class="title">Форма для настройки повтора платежей</h1>
+    <div class="form__box">
+
+        <h2 class="form__header">Настройка повтора платежей</h2>
+        <form class="form">
+            <div class="form__container">
+                <h5 class="form__title">Частота</h5>
+                <div class="form__checkboxes">
+                    <div>
+                        <input type="radio" name="frequency" id="weekly" value="weekly">
+                        <label for="weekly" class="form__label">еженедельно в</label>
+                        <select name="days" class="form__days">
+                            <option value="monday">понедельник</option>
+                            <option value="tuesday">вторник</option>
+                            <option value="wednesday">среду</option>
+                            <option value="thursday">четверг</option>
+                            <option value="friday">пятницу</option>
+                            <option value="saturday">субботу</option>
+                            <option value="sunday">воскресенье</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="radio" name="frequency" id="monthly" value="monthly">
+                        <label for="monthly" class="form__label form__label_monthly">ежемесячно</label>
+                        <select name="months">
+                            <option value="once">1</option>
+                            <option value="twice">2</option>
+                        </select>
+
+                    </div>
+                    <a class="form__link" href="index.html">Выбрать даты</a>
+                </div>
+            </div>
+            <div class="form__container">
+                <h5 class="form__title">Время</h5>
+                <div class="form__checkboxes">
+                    <div>
+                        <input type="time" name="time" id="time" dataformatas="hh:mm" value="weekly">
+                        <label for="time">(+4 utc, время московское)</label>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="form__container">
+                <h5 class="form__title">Кол-во</h5>
+                <div class="form__checkboxes">
+                    <div>
+                        <input type="radio" name="howlong" id="infinity" value="quantity">
+                        <label for="infinity">неограничено</label>
+                        <input type="radio" name="howlong" id="howmany" value="quantity">
+                        <input type="number" name="howlong" id="number" value="quantity" class="form__input-number">
+                        <label for="howmany">раза</label>
+                        <input type="radio" name="howlong" id="howlong" value="quantity">
+                        <label for="howlong">до</label>
+                        <input type="date" name="howlong" id="untill" placeholder="19.01.2017" class="form__input-date">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="form__container">
+                <h5 class="form__title">Сработает</h5>
+                <div class="form__result">
+                    <p id="result"></p>
+                    <p id="timeOfPay">00:00</p>
+                    <p id="result1"></p>
+                    <p id="result2"></p>
+                    <p id="result3"></p>
+                    <p id="result4"></p>
+                    <p id="result5"></p>
+
+                    <button type="submit">Сохранить</button>
+                </div>
+
+
+            </div>
+
+    </form>
+    </div>
+</div>
+<script src="./pages/index.js"></script>
+</body>
+
+</html>

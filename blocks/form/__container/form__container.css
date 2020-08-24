@@ -1,0 +1,9 @@
+.form__container {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.form__container:nth-child(1) {
+    padding-top: 0;
+}
