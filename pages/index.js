@@ -3,6 +3,8 @@ const weekCheckBox  = document.querySelector('#weekly');
 const timeBox  = document.querySelector('#time');
 const days = document.querySelector('.form__days');
 const month = document.querySelector('.form__month');
+
+//days.setAttribute('disabled', 'disabled');
  function daysDisabled() {
 
  days.setAttribute('disabled', 'disabled');
@@ -11,10 +13,20 @@ const month = document.querySelector('.form__month');
 
 }
 
-timeBox.onChange = function () {
+function daysEnabled() {
+
+    days.removeAttribute( 'disabled');
+
+    // days.removeAttribute('disabled');
+
+}
+
+timeBox.onchange = function () {
      console.log(this.value);
 }
 monthCheckBox.addEventListener('click', daysDisabled);
+weekCheckBox.addEventListener('click', daysEnabled);
+
 
 
 
@@ -32,17 +44,17 @@ const res4 = document.querySelector('#result4');
 const res5 = document.querySelector('#result5');
 const number = 0;
 let numberOfDaysToAdd = 0;
-month.onChange = function () {
-    daysDisabled();
+month.onchange = function () {
     if (this.value === 'once') {
-        numberOfDaysToAdd = number +30;
+        numberOfDaysToAdd = number;
         changeMonth()
     } else if (this.value === 'twice') {
-        numberOfDaysToAdd = number +14;
-        changeMonth()
+        numberOfDaysToAdd = number;
+        changeMonthTwice()
     }
 }
 days.onchange = function() {
+daysEnabled();
     if (this.value === 'tuesday') {
         numberOfDaysToAdd = number +1;
         changeDay()
@@ -190,22 +202,6 @@ const changeMonthTwice = function() {
     res4.textContent = fifthDate;
     res5.textContent = sevenDate;
 }
-//changeMonth();
-//let number = 1;
-/*const days = document.querySelector('.form__days');
-days.onchange = function() {
-   if (this.value === 'tuesday') {
-       number = number +1;
-       changeDay()
-   } else if (this.value === 'wednesday') {
-       number = number +2;
-       changeDay()
-   }
-}*/
 
-
-//res.textContent = `строка текста ${number} строка текста`;
-
-//const dayCheckBox = document.querySelector('#weekly');
 
 
