@@ -11,7 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ecf90c2-6b7d-46e6-85c8-ef0c7a9f78b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/form/__save/form__save.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__input-date/form__input-date.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__input-date/form__input-date.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__input-number/form__input-number.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__input-number/form__input-number.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +54,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598300680210</updated>
-      <workItem from="1598300681275" duration="6104000" />
+      <workItem from="1598300681275" duration="11573000" />
+      <workItem from="1598347050932" duration="1521000" />
     </task>
     <servers />
   </component>
@@ -63,8 +72,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="799" y="513" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598346173163">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="799" y="513" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1031@0.23.1792.1031" timestamp="1598346173163" />
   </component>
 </project>

@@ -1,37 +1,47 @@
 const monthCheckBox  = document.querySelector('#monthly');
 const weekCheckBox  = document.querySelector('#weekly');
 const timeBox  = document.querySelector('#time');
+const infinityCheckBox  = document.querySelector('#infinity');
+const firstPayCheckBox  = document.querySelector('#howmany');
 const days = document.querySelector('.form__days');
+const popup = document.querySelector('.popup');
 const month = document.querySelector('.form__month');
+const frequency = document.querySelector('.form__frequency');
+const calendar = document.querySelector('.form__link');
+const button = document.querySelector('.form__save');
 
-//days.setAttribute('disabled', 'disabled');
+
+frequencyDisabled()
+function frequencyDisabled() {
+    frequency.setAttribute('disabled', 'disabled');
+    frequency.value = "once";
+}
+
+function frequencyEnabled() {
+    frequency.removeAttribute( 'disabled');
+}
  function daysDisabled() {
-
  days.setAttribute('disabled', 'disabled');
-
-   // days.removeAttribute('disabled');
-
 }
 
 function daysEnabled() {
-
     days.removeAttribute( 'disabled');
+}
+function monthDisabled() {
+    month.setAttribute('disabled', 'disabled');
+}
 
-    // days.removeAttribute('disabled');
-
+function monthEnabled() {
+    month.removeAttribute( 'disabled');
 }
 
 timeBox.onchange = function () {
      console.log(this.value);
+     timeOfPay.textContent=this.value;
 }
-monthCheckBox.addEventListener('click', daysDisabled);
-weekCheckBox.addEventListener('click', daysEnabled);
-
-
-
-
 
 const res = document.querySelector('#result');
+const timeOfPay = document.querySelector('#timeOfPay');
 
 const res1 = document.querySelector('#result1');
 
@@ -44,7 +54,18 @@ const res4 = document.querySelector('#result4');
 const res5 = document.querySelector('#result5');
 const number = 0;
 let numberOfDaysToAdd = 0;
+frequency.onchange = function () {
+    if (this.value === 'once') {
+        numberOfDaysToAdd = number;
+        changeMonth()
+    } else if (this.value === 'twice') {
+res.textContent ='---------'
+    }
+}
+
+
 month.onchange = function () {
+    monthEnabled()
     if (this.value === 'once') {
         numberOfDaysToAdd = number;
         changeMonth()
@@ -202,6 +223,39 @@ const changeMonthTwice = function() {
     res4.textContent = fifthDate;
     res5.textContent = sevenDate;
 }
+function openPopup() {
+    popup.classList.add("popup_opened");
+}
+function clickClose(evt) {
+    if (evt.target.classList.contains("popup_opened")) {
+        closePopup(evt.target);
+    }
+}
+function escClose(evt) {
+    if (evt.key === "Escape") {
+
+            if (popup.classList.contains("popup_opened")) {
+                closePopup();
+            }
+    }
+}
+popup.addEventListener("click", clickClose);
+document.addEventListener("keydown", escClose);
+function closePopup() {
+    popup.classList.remove("popup_opened");
+}
+function clickButton(evt) {
+ evt.preventDefault()
+}
 
 
-
+button.addEventListener('click', clickButton);
+calendar.addEventListener('click', openPopup);
+monthCheckBox.addEventListener('click', daysDisabled);
+monthCheckBox.addEventListener('click', monthEnabled);
+monthCheckBox.addEventListener('click', frequencyDisabled);
+infinityCheckBox.addEventListener('click', frequencyDisabled);
+infinityCheckBox.addEventListener('click', changeMonth);
+weekCheckBox.addEventListener('click', daysEnabled);
+weekCheckBox.addEventListener('click', monthDisabled);
+firstPayCheckBox.addEventListener('click', frequencyEnabled);

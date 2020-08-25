@@ -1,0 +1,12 @@
+.form__save {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    background-color: lightgray;
+}
+
+.form__save:hover {
+    background-color: grey;
+}
+

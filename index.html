@@ -46,7 +46,7 @@
                         </select>
 
                     </div>
-                    <a class="form__link" href="index.html">Выбрать даты</a>
+                    <a class="form__link" href="#">Выбрать даты</a>
                 </div>
             </div>
             <div class="form__container">
@@ -69,11 +69,14 @@
                             <input type="radio" name="howlong" id="infinity" value="quantity" checked>
                             неограничено</label>
                         <input type="radio" name="howlong" id="howmany" value="quantity">
-                        <input type="number" name="howlong" id="number" value="quantity" class="form__input-number">
+                        <select class="form__frequency">
+                            <option value="once">1</option>
+                            <option value="twice" >2</option>
+                        </select>
                         <label for="howmany">раза</label>
                         <input type="radio" name="howlong" id="howlong" value="quantity">
                         <label for="howlong">до</label>
-                        <input type="date" name="howlong" id="untill" placeholder="19.01.2017" class="form__input-date">
+                        <input name="howlong" id="untill" placeholder="31.12.2020" class="form__input-date" disabled>
 
 
                     </div>
@@ -91,7 +94,7 @@
                     <p id="result4"></p>
                     <p id="result5"></p>
 
-                    <button type="submit">Сохранить</button>
+                    <button type="submit" class="form__save">Сохранить</button>
                 </div>
 
 
@@ -99,7 +102,11 @@
 
         </form>
     </div>
-</div>
+    <section class="popup">
+        <div class="popup__container">
+        </div>
+    </section>
+        </div>
 <script src="./pages/index.js"></script>
 </body>
 
