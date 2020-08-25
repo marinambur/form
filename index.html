@@ -23,8 +23,9 @@
                 <h5 class="form__title">Частота</h5>
                 <div class="form__checkboxes">
                     <div>
-                        <input type="radio" name="frequency" id="weekly" value="weekly">
-                        <label for="weekly" class="form__label">еженедельно в</label>
+                        <label for="weekly" class="form__label">
+                            <input type="radio" name="frequency" id="weekly" value="weekly" onclick="changeDay()">еженедельно в
+                        </label>
                         <select name="days" class="form__days">
                             <option value="monday">понедельник</option>
                             <option value="tuesday">вторник</option>
@@ -36,11 +37,12 @@
                         </select>
                     </div>
                     <div>
-                        <input type="radio" name="frequency" id="monthly" value="monthly">
-                        <label for="monthly" class="form__label form__label_monthly">ежемесячно</label>
-                        <select name="months">
+                        <label for="monthly" class="form__label form__label_monthly">
+                            <input type="radio" name="frequency" id="monthly" value="monthly" onclick="changeMonth()">
+                            ежемесячно</label>
+                        <select name="months" class="form__month">
                             <option value="once">1</option>
-                            <option value="twice">2</option>
+                            <option value="twice" >2</option>
                         </select>
 
                     </div>
@@ -63,8 +65,9 @@
                 <h5 class="form__title">Кол-во</h5>
                 <div class="form__checkboxes">
                     <div>
-                        <input type="radio" name="howlong" id="infinity" value="quantity">
-                        <label for="infinity">неограничено</label>
+                        <label for="infinity">
+                            <input type="radio" name="howlong" id="infinity" value="quantity" checked>
+                            неограничено</label>
                         <input type="radio" name="howlong" id="howmany" value="quantity">
                         <input type="number" name="howlong" id="number" value="quantity" class="form__input-number">
                         <label for="howmany">раза</label>
@@ -94,7 +97,7 @@
 
             </div>
 
-    </form>
+        </form>
     </div>
 </div>
 <script src="./pages/index.js"></script>

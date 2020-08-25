@@ -1,13 +1,23 @@
-//const  = document.getElementById('weekly');
-/*if (dayCheckBox.onchange) {
-    console.log('Выбран');
+const monthCheckBox  = document.querySelector('#monthly');
+const weekCheckBox  = document.querySelector('#weekly');
+const timeBox  = document.querySelector('#time');
+const days = document.querySelector('.form__days');
+const month = document.querySelector('.form__month');
+ function daysDisabled() {
+
+ days.setAttribute('disabled', 'disabled');
+
+   // days.removeAttribute('disabled');
+
 }
-else {
-    console.log ('Не выбран');
+
+timeBox.onChange = function () {
+     console.log(this.value);
+}
+monthCheckBox.addEventListener('click', daysDisabled);
 
 
 
-}*/
 
 const res = document.querySelector('#result');
 
@@ -22,7 +32,16 @@ const res4 = document.querySelector('#result4');
 const res5 = document.querySelector('#result5');
 const number = 0;
 let numberOfDaysToAdd = 0;
-const days = document.querySelector('.form__days');
+month.onChange = function () {
+    daysDisabled();
+    if (this.value === 'once') {
+        numberOfDaysToAdd = number +30;
+        changeMonth()
+    } else if (this.value === 'twice') {
+        numberOfDaysToAdd = number +14;
+        changeMonth()
+    }
+}
 days.onchange = function() {
     if (this.value === 'tuesday') {
         numberOfDaysToAdd = number +1;
@@ -88,7 +107,90 @@ let someDate = new Date();
     res4.textContent = fifthDate;
     res5.textContent = sevenDate;
 }
-changeDay();
+//changeDay();
+
+const changeMonth = function() {
+    let someDate = new Date();
+    someDate.setDate(someDate.getDate() + numberOfDaysToAdd)
+    let firstDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 30)
+    let secondDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 30)
+    let thirdDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 30)
+    let fourthDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 30)
+    let fifthDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 30)
+    let sevenDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+
+    res.textContent = firstDate;
+    res1.textContent = secondDate;
+    res2.textContent = thirdDate;
+    res3.textContent = fourthDate;
+    res4.textContent = fifthDate;
+    res5.textContent = sevenDate;
+}
+
+const changeMonthTwice = function() {
+    let someDate = new Date();
+    someDate.setDate(someDate.getDate() + numberOfDaysToAdd)
+    let firstDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 14)
+    let secondDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 14)
+    let thirdDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 14)
+    let fourthDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 14)
+    let fifthDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+    someDate.setDate(someDate.getDate() + 14)
+    let sevenDate= someDate.toLocaleString('ru', {
+        month: 'long',
+        day: 'numeric'
+    });
+
+    res.textContent = firstDate;
+    res1.textContent = secondDate;
+    res2.textContent = thirdDate;
+    res3.textContent = fourthDate;
+    res4.textContent = fifthDate;
+    res5.textContent = sevenDate;
+}
+//changeMonth();
 //let number = 1;
 /*const days = document.querySelector('.form__days');
 days.onchange = function() {
