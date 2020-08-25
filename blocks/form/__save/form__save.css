@@ -4,9 +4,14 @@
     cursor: pointer;
     width: 150px;
     background-color: lightgray;
+    margin-top: 20px;
 }
 
 .form__save:hover {
     background-color: grey;
+}
+
+.form__save:active {
+   color: white;
 }
 

@@ -254,6 +254,7 @@ calendar.addEventListener('click', openPopup);
 monthCheckBox.addEventListener('click', daysDisabled);
 monthCheckBox.addEventListener('click', monthEnabled);
 monthCheckBox.addEventListener('click', frequencyDisabled);
+weekCheckBox.addEventListener('click', frequencyDisabled);
 infinityCheckBox.addEventListener('click', frequencyDisabled);
 infinityCheckBox.addEventListener('click', changeMonth);
 weekCheckBox.addEventListener('click', daysEnabled);

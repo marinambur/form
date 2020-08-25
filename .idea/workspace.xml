@@ -11,13 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ecf90c2-6b7d-46e6-85c8-ef0c7a9f78b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/form/__save/form__save.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/form/__date-box/form__date-box.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/form/__date/form__date.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/form/__lines/form__lines.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/form/__link/form__link.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/form/__input-date/form__input-date.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__input-date/form__input-date.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/form/__input-number/form__input-number.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__input-number/form__input-number.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__container/form__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__container/form__container.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__save/form__save.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__save/form__save.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/form/__title/form__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/form/__title/form__title.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
@@ -55,7 +56,9 @@
       <option name="presentableId" value="Default" />
       <updated>1598300680210</updated>
       <workItem from="1598300681275" duration="11573000" />
-      <workItem from="1598347050932" duration="1521000" />
+      <workItem from="1598347050932" duration="1808000" />
+      <workItem from="1598350317852" duration="347000" />
+      <workItem from="1598369535589" duration="2074000" />
     </task>
     <servers />
   </component>

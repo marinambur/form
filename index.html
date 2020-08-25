@@ -22,9 +22,10 @@
             <div class="form__container">
                 <h5 class="form__title">Частота</h5>
                 <div class="form__checkboxes">
-                    <div>
+                    <div class="form__lines">
                         <label for="weekly" class="form__label">
-                            <input type="radio" name="frequency" id="weekly" value="weekly" onclick="changeDay()">еженедельно в
+                            <input type="radio" name="frequency" id="weekly" value="weekly" onclick="changeDay()">еженедельно
+                            в
                         </label>
                         <select name="days" class="form__days">
                             <option value="monday">понедельник</option>
@@ -36,13 +37,13 @@
                             <option value="sunday">воскресенье</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form__lines">
                         <label for="monthly" class="form__label form__label_monthly">
                             <input type="radio" name="frequency" id="monthly" value="monthly" onclick="changeMonth()">
                             ежемесячно</label>
                         <select name="months" class="form__month">
                             <option value="once">1</option>
-                            <option value="twice" >2</option>
+                            <option value="twice">2</option>
                         </select>
 
                     </div>
@@ -71,7 +72,7 @@
                         <input type="radio" name="howlong" id="howmany" value="quantity">
                         <select class="form__frequency">
                             <option value="once">1</option>
-                            <option value="twice" >2</option>
+                            <option value="twice">2</option>
                         </select>
                         <label for="howmany">раза</label>
                         <input type="radio" name="howlong" id="howlong" value="quantity">
@@ -86,13 +87,15 @@
             <div class="form__container">
                 <h5 class="form__title">Сработает</h5>
                 <div class="form__result">
-                    <p id="result"></p>
-                    <p id="timeOfPay">00:00</p>
-                    <p id="result1"></p>
-                    <p id="result2"></p>
-                    <p id="result3"></p>
-                    <p id="result4"></p>
-                    <p id="result5"></p>
+                    <div class="form__date-box">
+                        <p id="result" class="form__date"></p>
+                        <p id="timeOfPay" class="form__date">00:00</p>
+                    </div>
+                    <p id="result1" class="form__date"></p>
+                    <p id="result2" class="form__date"></p>
+                    <p id="result3" class="form__date"></p>
+                    <p id="result4" class="form__date"></p>
+                    <p id="result5" class="form__date"></p>
 
                     <button type="submit" class="form__save">Сохранить</button>
                 </div>
@@ -106,7 +109,7 @@
         <div class="popup__container">
         </div>
     </section>
-        </div>
+</div>
 <script src="./pages/index.js"></script>
 </body>
 

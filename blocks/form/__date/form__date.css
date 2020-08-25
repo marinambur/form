@@ -1,0 +1,8 @@
+.form__date {
+    margin: 0 0 15px;
+}
+
+.form__date:first-child {
+    margin-right: 10px;
+}
+
